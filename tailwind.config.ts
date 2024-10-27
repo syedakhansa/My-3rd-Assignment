@@ -1,3 +1,4 @@
+import { withRouter } from "next/router";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,12 +9,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+       colors:{
+      bacckground:"var(--background)",
+      foreground:"var(--foreground)",
+      primary:"#ff3333",
+      secondary:"gray",
+      khansa:"pink",
+    },
       },
     },
-  },
   plugins: [],
 };
 export default config;
